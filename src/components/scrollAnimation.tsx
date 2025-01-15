@@ -3,39 +3,56 @@ import { motion } from "framer-motion";
 
 const ScrollAnimation = () => {
   return (
-    <div className="flex gap-4 h-screen fixed top-0 -right-10 -rotate-6  p-4">
-      {columns.map((columnFiles, columnIndex) => (
-        <div key={columnIndex} className="flex-1 ">
-          <motion.div
-            initial={{ y: columnIndex === 1 ? -200 : 0 }}
+    <div className="flex  h-screen fixed top-0 -right-4  p-4">
+       <motion.div
+            initial={{ y: 0 }}
             animate={{
-              y: [columnIndex === 1 ? -200 : 0, columnIndex === 1 ? 0 : -200],
+              y: [-100, -150],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear",
+              delay: 1,
+            }}
+            className=""
+          > 
+            <img src="./Flashcard.svg" alt="" className="translate-x-[300px]" />
+          </motion.div>
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{
+              y: [-100, -150],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear",
+              delay: 1,
+            }}
+            className=""
+          > 
+            <img src="./Flashcard-1.svg" alt="" className="translate-x-40" />
+          </motion.div>
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{
+              y: [-100, -150],
             }}
             transition={{
               duration: 40,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "linear",
-              delay: columnIndex * 2,
+              delay: 1,
             }}
-            className="flex flex-col gap-4"
-          >
-            {columnFiles.items.map((file) => (
-              <div className="p-4 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="font-semibold text-sm mb-1">{file.title}</h3>
-                <p className="text-xs text-gray-600">{file.content}</p>
-              </div>
-            ))}
-
-            {columnFiles.items.map((file) => (
-              <div className="p-4 bg-white/80 backdrop-blur-sm rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <h3 className="font-semibold text-sm mb-1">{file.title}</h3>
-                <p className="text-xs text-gray-600">{file.content}</p>
-              </div>
-            ))}
+            className=""
+          > 
+            <img src="./Flashcard-2.svg" alt=""    />
           </motion.div>
-        </div>
-      ))}
+         
     </div>
   );
 };
