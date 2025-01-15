@@ -1,7 +1,6 @@
 import { Box, Button } from "@mui/material";
 import { OTP } from "../components/OTP";
 import React from "react";
-import ScrollAnimation from "../components/scrollAnimation";
 
 const Code = () => {
   const [otp, setOtp] = React.useState("");
