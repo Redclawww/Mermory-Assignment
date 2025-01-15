@@ -5,6 +5,7 @@ import { Visibility, VisibilityOff } from "@mui/icons-material";
 
 const LoginForm = () => {
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -20,10 +21,12 @@ const LoginForm = () => {
           Email <span className="text-red-500">*</span>
         </label>
         <StyledTextField
-          type="password"
+          type="email"
           placeholder="Enter your email"
           variant="outlined"
           fullWidth
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
       </div>
       <div>
@@ -71,7 +74,7 @@ const LoginForm = () => {
             },
           }}
         >
-          Continue
+          Sign In
         </Button>
       </div>
       <p className="text-[14px] text-center text-[#5E7078] font-normal ">

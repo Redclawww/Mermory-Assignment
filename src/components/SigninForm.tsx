@@ -1,12 +1,13 @@
 import { Button, IconButton, InputAdornment } from "@mui/material";
 import React, { useState } from "react";
-import { StyledTextField } from "./Input";
+import { StyledBdayTextField, StyledTextField } from "./Input";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
 const SigninForm = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = React.useState(false);
+  const [birthday, setBirthday] = useState("");
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -108,11 +109,14 @@ const SigninForm = () => {
         <label htmlFor="" className="text-xs  w-full  text-[#5E7078]">
           Birthday<span className="text-red-500">*</span>
         </label>
-        <StyledTextField
-          type="date"
+        <StyledBdayTextField
+          type="text"
           placeholder="DD/MM/YYYY"
           variant="outlined"
           fullWidth
+          value={birthday}
+          sx={{ backgroundColor: "transparent" }}
+          onChange={(e) => setBirthday(e.target.value)}
         />
       </div>
 

@@ -1,12 +1,14 @@
 import { Box, Button } from "@mui/material";
 import { OTP } from "../components/OTP";
 import React from "react";
+import ScrollAnimation from "../components/scrollAnimation";
 
-const Otp = () => {
+const Code = () => {
   const [otp, setOtp] = React.useState("");
 
   return (
-    <section className="bg-white flex flex-col items-center rounded-[24px] fixed left-[100px] top-[122px] p-10 font-semibold gap-4 w-full max-w-[556px]">
+    <div className="relative w-full h-full font-normal">
+      <section className="bg-white flex flex-col items-center rounded-[24px] fixed left-[100px] top-[122px] p-10 font-semibold gap-4 w-full max-w-[556px]">
       <h1 className="text-4xl">We emailed you a code</h1>
       <p className="font-normal text-[16px]">
         Enter the verification code sent to: <strong>johndoe@gmail.com</strong>
@@ -47,7 +49,9 @@ const Otp = () => {
         .
       </p>
     </section>
+
+    </div>
   );
 };
 
-export default Otp;
+export default Code;
