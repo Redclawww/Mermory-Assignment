@@ -49,7 +49,6 @@ const Code = () => {
         .
       </p>
     </section>
-
     </div>
   );
 };

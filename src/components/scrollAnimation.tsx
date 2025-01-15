@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const ScrollAnimation = () => {
   return (
-    <div className="flex  h-screen fixed top-0 -right-4  p-4">
+    <div className="  h-screen fixed top-0 -right-4  p-4 hidden lg:flex">
        <motion.div
             initial={{ y: 0 }}
             animate={{
               y: [-100, -150],
             }}
             transition={{
-              duration: 20,
+              duration: 5,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "linear",
@@ -26,7 +26,7 @@ const ScrollAnimation = () => {
               y: [-100, -150],
             }}
             transition={{
-              duration: 20,
+              duration: 5,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "linear",
@@ -42,11 +42,11 @@ const ScrollAnimation = () => {
               y: [-100, -150],
             }}
             transition={{
-              duration: 40,
+              duration: 5,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "linear",
-              delay: 1,
+              delay: 0,
             }}
             className=""
           > 
