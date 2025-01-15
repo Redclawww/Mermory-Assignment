@@ -25,11 +25,11 @@ const Otp = () => {
           backgroundColor: "#F0F0F0",
           color: "black",
           fontWeight: 600,
-          fontSize: "0.875rem", // text-sm
+          fontSize: "0.875rem", 
           fontFamily: "inherit",
-          px: "6rem", // px-24
-          py: "0.75rem", // py-3
-          borderRadius: "1.5rem", // rounded-3xl
+          px: "6rem", 
+          py: "0.75rem", 
+          borderRadius: "1.5rem",
           textTransform: "none",
           "&:hover": {
             backgroundColor: "#E0E0E0",

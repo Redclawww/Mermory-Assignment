@@ -13,7 +13,6 @@ const SigninForm = () => {
   const getSequentialStrength = () => {
     let strength = 0;
     
-    // Check criteria in sequence
     const hasLowerCase = /[a-z]/.test(password);
     const hasUpperCase = /[A-Z]/.test(password);
     const hasNumber = /[0-9]/.test(password);
@@ -32,7 +31,6 @@ const SigninForm = () => {
     
     if (index >= currentStrength) return "bg-gray-200";
     
-    // Color based on sequential progress
     switch (currentStrength) {
       case 1:
         return "bg-red-500";
