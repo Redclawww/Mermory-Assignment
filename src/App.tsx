@@ -33,7 +33,7 @@ function Layout({ children }: { children: ReactNode }) {
       <img
         src={"./mermory.svg"}
         alt="Mermory illustration"
-        className="fixed top-[20px] lg:top-[57px] left-[100px]"
+        className="fixed top-[57px] left-[60px] 2xl:left-[100px]"
       />
       <ScrollAnimation />
       {children}
