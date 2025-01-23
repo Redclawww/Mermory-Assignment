@@ -5,7 +5,7 @@ import LoginForm from '../components/LoginForm'
 const Login = () => {
   
   return (
-    <section className="bg-white flex flex-col rounded-[24px] fixed left-[30px] 2xl:left-[100px] top-[122px] text-[] p-10 font-semibold gap-4 w-full max-w-[500px] scale-75 xl:scale-90 2xl:scale-100">
+    <section className="bg-white flex flex-col rounded-[24px] fixed  left-0 xl:left-[30px] 2xl:left-[100px] top-[50px]  xl:top-[80px] p-10 font-semibold gap-2 w-full max-w-[520px] scale-75 xl:scale-90 2xl:scale-100">
       <h1 className="text-4xl">
       Welcome Back!
       </h1>
