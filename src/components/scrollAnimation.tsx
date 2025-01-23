@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ScrollAnimation = () => {
   return (
-    <div className="h-screen fixed top-0 -right-4  p-4 hidden lg:flex translate-x-60 xl:translate-x-0">
+    <div className="h-screen fixed top-0 -right-4  p-4 hidden lg:flex scale-90 translate-x-16 2xl:scale-100 2xl:translate-x-0">
        <motion.div
             initial={{ y: 0 }}
             animate={{
