@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ScrollAnimation = () => {
   return (
-    <div className="  h-screen fixed top-0 -right-4  p-4 hidden lg:flex">
+    <div className="h-screen fixed top-0 -right-4  p-4 hidden lg:flex translate-x-60 xl:translate-x-0">
        <motion.div
             initial={{ y: 0 }}
             animate={{
@@ -35,7 +35,7 @@ const ScrollAnimation = () => {
             }}
             className=""
           > 
-            <img src="./Flashcard-1.svg" alt="" className="translate-x-40" />
+            <img src="./Flashcard-1.svg" alt="" className="translate-x-40 " />
           </motion.div>
           <motion.div
             initial={{ y: 0 }}
@@ -51,7 +51,7 @@ const ScrollAnimation = () => {
             }}
             className=""
           > 
-            <img src="./Flashcard-2.svg" alt=""    />
+            <img src="./Flashcard-2.svg" alt=""  className=""   />
           </motion.div>
     </div>
   );
