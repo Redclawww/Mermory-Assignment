@@ -16,7 +16,7 @@ const Login = () => {
         </p>
         <div className="flex flex-col items-center justify-center gap-2 ">
           <LoginButton >
-            <img src="./Google.svg" alt="" /> Continue with google
+            <img src="./Google.svg" alt="" /> Continue with Google
           </LoginButton>
           <LoginButton >
             <img src="./Apple.svg" alt="" /> Continue with Apple

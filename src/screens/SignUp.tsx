@@ -3,8 +3,8 @@ import { LoginButton } from "../components/Button";
 
 const SignUp = () => {
   return (
-    <section className="bg-white flex flex-col rounded-[24px] fixed left-[100px] top-[122px] p-10 font-semibold gap-2 w-full max-w-[500px]">
-      <h1 className="text-4xl">
+    <section className="bg-white flex flex-col rounded-[24px] fixed left-[100px] top-[122px] p-10 font-semibold gap-2 w-full max-w-[520px]">
+      <h1 className="text-3xl xl:text-4xl">
         <span className="bg-gradient-to-br from-[#2C9CE2] to-[#BFADF2] bg-clip-text text-transparent ">
           Get Started
         </span>{" "}
@@ -19,7 +19,7 @@ const SignUp = () => {
         </p>
         <div className="flex flex-col items-center justify-center gap-2 ">
           <LoginButton>
-            <img src="./Google.svg" alt="" /> Continue with google
+            <img src="./Google.svg" alt="" /> Continue with Google
           </LoginButton>
           <LoginButton>
             <img src="./Apple.svg" alt="" /> Continue with Apple
