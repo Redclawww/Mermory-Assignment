@@ -3,7 +3,7 @@ import { LoginButton } from "../components/Button";
 
 const SignUp = () => {
   return (
-    <section className="bg-white flex flex-col rounded-[24px] fixed  left-0 xl:left-[30px] 2xl:left-[100px] top-[50px]  xl:top-[80px] p-10 font-semibold gap-2 w-full max-w-[520px] scale-75 xl:scale-90 2xl:scale-100">
+    <section className="bg-white flex flex-col rounded-[24px] fixed  left-0 xl:left-[30px] 2xl:left-[100px] top-[50px]  xl:top-[150px] p-10 font-semibold gap-2 w-full max-w-[520px] scale-75 xl:scale-90 2xl:scale-100">
       <h1 className="text-3xl xl:text-4xl">
         <span className="bg-gradient-to-br from-[#2C9CE2] to-[#BFADF2] bg-clip-text text-transparent ">
           Get Started
